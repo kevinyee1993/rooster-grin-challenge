@@ -120,3 +120,13 @@ h1 {
   font-size: 28px;
   color: #283647;
 }
+
+.info-section-2-middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.info-section-2-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
