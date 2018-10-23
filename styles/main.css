@@ -10,6 +10,30 @@ h1 {
   font-size: 35px
 }
 
+.hero-image-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+}
+
+.header2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  color: #F36819;
+}
+
+.header3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #F7931D;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 /* header */
   .site-header {
     display: grid;
@@ -99,7 +123,7 @@ h1 {
   grid-template-rows: auto auto auto;
 }
 
-.info-section-2-header {
+.info-section-header {
   /* display: grid; */
   /* grid-template-columns: auto auto; */
   display: flex;
@@ -136,6 +160,11 @@ h1 {
   font-weight: bold;
   font-size: 55px;
   letter-spacing: 2px;
+  transition: transform .8s;
+}
+
+.percent:hover {
+   transform: scale(1.03);
 }
 
 .percent-text {
@@ -144,4 +173,14 @@ h1 {
   font-weight: bold;
   color: #F7931D;
   line-height: 20px;
+}
+
+.info-section-3-checkerboard {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.info-section-3-checkerboard img {
+  height: 350px;
+  width: 705px;
 }
