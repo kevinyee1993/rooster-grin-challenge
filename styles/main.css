@@ -178,6 +178,12 @@ p {
 .info-section-3-checkerboard {
   display: grid;
   grid-template-columns: auto auto;
+  transition: 1s;
+  opacity: 0;
+}
+
+.scroll-active {
+  opacity: 1;
 }
 
 .info-section-3-checkerboard img {

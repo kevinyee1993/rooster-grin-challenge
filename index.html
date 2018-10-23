@@ -122,6 +122,44 @@
   </section>
 
 
+    <script type="text/javascript">
+    function debounce(func, wait = 10, immediate = true) {
+      var timeout;
+      return function() {
+        var context = this, args = arguments;
+        var later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+      };
+    };
+
+      const checkerBoard = document.querySelectorAll(".info-section-3-checkerboard")[0];
+      const checkerBoardHeight = checkerBoard.offsetHeight;
+      const checkerBoardTop = checkerBoard.offsetTop;
+      const imageBottom = checkerBoardTop + checkerBoardHeight;
+
+      function checkScroll(e) {
+        // console.log(checkerBoard[0].scrollHeight);
+        const slideInAt = (window.scrollY + window.innerHeight - (checkerBoardHeight / 2));
+
+        const isHalfShown = slideInAt > checkerBoardTop;
+        const isNotScrolledPast = window.scrollY < imageBottom;
+
+        if(isHalfShown && isNotScrolledPast) {
+          checkerBoard.classList.add('scroll-active');
+        } else {
+          checkerBoard.classList.remove('scroll-active');
+        }
+      }
+
+      window.addEventListener('scroll', debounce(checkScroll));
+    </script>
+
     <script type="text/javascript" src="bundle.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
