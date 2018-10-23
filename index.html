@@ -18,11 +18,11 @@
     </header>
 
     <!-- Front Page Slider -->
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <div class="carousel slide" data-ride="carousel" data-interval="5000">
     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-slide-to="0" class="active"></li>
+      <li data-slide-to="1"></li>
+      <li data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -43,7 +43,7 @@
 
   <!-- Sticky envelope button -->
   <div class="sticky-envelope">
-    <button>
+    <button data-toggle="modal" data-target="#form-modal">
       <img src="/assets/envelope-icon.svg" alt="envelope">
     </button>
   </div>
@@ -54,7 +54,8 @@
     <button
     type="button"
     name="button"
-    class="hero-button">Button</button>
+    class="hero-button"
+    data-toggle="modal" data-target="#form-modal">Button</button>
   </header>
 
 
@@ -97,11 +98,10 @@
     <article class="info-section-2-middle">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-      <!-- <div> -->
         <button type="button"
         name="button"
-        class="hero-button">Button</button>
-      <!-- </div> -->
+        class="hero-button"
+        data-toggle="modal" data-target="#form-modal">Button</button>
     </article>
 
     <article class="info-section-2-bottom">
@@ -143,33 +143,50 @@
     </section>
   </section>
 
-<!-- Modal -->
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <section class="modal-display">
+      <h2 class="header2">LOREM IPSUM</h1>
+      <form class="name-form">
+        <label for="name-input">Your Name</label>
+        <input type="text" id="name-input">
+      </form>
+
+      <form class="email-and-number-form">
+          <label for="email-input">Your Email</label>
+          <input type="text" id="email-input">
+          <br>
+          <label for="number-input">Your Number</label>
+          <input type="text" id="number-input">
+      </form>
+
+      <form class="message-form">
+        <label for="message-input">Message</label>
+        <input type="text" id="message-input">
+      </form>
+
+      <button type="button" class="hero-button" data-dismiss="modal">Button</button>
+    </section>
+
+    <!-- <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
       </div>
       <div class="modal-body">
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="hero-button" data-dismiss="modal">Button</button>
       </div>
-    </div>
+    </div> -->
+
   </div>
 </div>
 
+
+<!-- Fade in script -->
     <script type="text/javascript">
     function debounce(func, wait = 10, immediate = true) {
       var timeout;

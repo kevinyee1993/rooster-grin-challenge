@@ -299,3 +299,8 @@ p {
 .checkerboard-text p {
   margin-top: 30px;
 }
+
+/* Modal */
+.modal-display {
+  display: grid;
+}
