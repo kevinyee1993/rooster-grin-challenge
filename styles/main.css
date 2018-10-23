@@ -178,6 +178,7 @@ p {
 .info-section-2 {
   display: grid;
   grid-template-rows: auto auto auto;
+  margin-top: 50px;
 }
 
 .info-section-header {
@@ -186,6 +187,7 @@ p {
   display: flex;
   border: 1px solid black;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .lorem-header {
@@ -204,12 +206,39 @@ p {
 
 .info-section-2-middle {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
 }
+
+.info-section-2-middle p {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 0 auto;
+}
+
+.info-section-2-middle button {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin: 0 auto;
+}
+
 
 .info-section-2-bottom {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  margin-top: 50px;
+}
+
+.info-section-2-bottom article:first-child {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.info-section-2-bottom article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 50px 0px 50px;
 }
 
 .percent {
@@ -221,7 +250,7 @@ p {
 }
 
 .percent:hover {
-   transform: scale(1.03);
+   transform: scale(1.1);
 }
 
 .percent-text {
