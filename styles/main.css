@@ -107,7 +107,7 @@ h1 {
   justify-content: center;
 }
 
-.info-section-2-header-1 {
+.lorem-header {
   font-family: 'Roboto';
   font-weight: bold;
   font-size: 28px;
@@ -115,7 +115,7 @@ h1 {
   margin-right: 10px;
 }
 
-.info-section-2-header-2 {
+.ipsum-header {
   font-family: 'Roboto';
   font-size: 28px;
   color: #283647;
@@ -129,4 +129,19 @@ h1 {
 .info-section-2-bottom {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.percent {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 55px;
+  letter-spacing: 2px;
+}
+
+.percent-text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: bold;
+  color: #F7931D;
+  line-height: 20px;
 }
