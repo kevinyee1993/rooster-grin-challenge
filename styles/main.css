@@ -305,6 +305,7 @@ p {
   display: grid;
   grid-template-rows: auto auto auto;
   margin-top: 35%;
+  margin-left: -100px;
   color: white;
 }
 
@@ -329,17 +330,19 @@ p {
   grid-template-columns: 3fr 0.25fr 3fr;
 }
 
-.email-and-number input {
-  display: flex;
-  justify-content: space-between;
-}
 
 .message {
   margin-top: 20px;
 }
 
-.message input{
-  height: 150px;
+.message textarea{
+  border-radius: 5px;
+  border: none;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
 }
 
 input {

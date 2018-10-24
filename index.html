@@ -147,35 +147,37 @@
 <!-- Modal -->
 <div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <section class="modal-display">
-      <h2 class="header2">LOREM IPSUM</h1>
-      <form class="modal-form">
-        <label for="name-input">Your Name</label>
-        <input type="text" id="name-input">
-      </form>
-
-      <div class="email-and-number">
+    <div class="modal-content">
+      <section class="modal-display">
+        <h2 class="header2">LOREM IPSUM</h1>
         <form class="modal-form">
-            <label for="email-input">Your Email</label>
-            <input type="text" id="email-input">
-        </form>
+          <label for="name-input">Your Name</label>
+          <input type="text" id="name-input">
 
-        <div>
+          <section class="email-and-number">
+            <div class="modal-form">
+              <label for="email-input">Your Email</label>
+              <input type="text" id="email-input">
+            </div>
 
-        </div>
+            <div></div>
 
-        <form class="modal-form">
-            <label for="number-input">Your Number</label>
-            <input type="text" id="number-input">
+            <div class="modal-form">
+              <label for="number-input">Your Number</label>
+              <input type="text" id="number-input">
+            </div>
+          </section>
+
+
+          <div class="message">
+            <label for="message-input">Message</label>
+            <textarea name="name" rows="8" cols="80"></textarea>
+          </div>
+
+          <button type="submit" class="hero-button">
+            Button</button>
         </form>
       </div>
-
-      <form class="modal-form message">
-        <label for="message-input">Message</label>
-        <input type="text" id="message-input">
-      </form>
-
-      <button type="button" class="hero-button" data-dismiss="modal">Button</button>
     </section>
   </div>
 </div>
