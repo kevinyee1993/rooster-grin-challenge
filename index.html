@@ -149,39 +149,30 @@
   <div class="modal-dialog" role="document">
     <section class="modal-display">
       <h2 class="header2">LOREM IPSUM</h1>
-      <form class="name-form">
+      <form class="modal-form">
         <label for="name-input">Your Name</label>
         <input type="text" id="name-input">
       </form>
 
-      <form class="email-and-number-form">
-          <label for="email-input">Your Email</label>
-          <input type="text" id="email-input">
-          <br>
-          <label for="number-input">Your Number</label>
-          <input type="text" id="number-input">
-      </form>
+      <div class="email-and-number">
+        <form class="modal-form">
+            <label for="email-input">Your Email</label>
+            <input type="text" id="email-input">
+        </form>
 
-      <form class="message-form">
+        <form class="modal-form">
+            <label for="number-input">Your Number</label>
+            <input type="text" id="number-input">
+        </form>
+      </div>
+
+      <form class="modal-form">
         <label for="message-input">Message</label>
         <input type="text" id="message-input">
       </form>
 
       <button type="button" class="hero-button" data-dismiss="modal">Button</button>
     </section>
-
-    <!-- <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="hero-button" data-dismiss="modal">Button</button>
-      </div>
-    </div> -->
-
   </div>
 </div>
 
@@ -210,7 +201,7 @@
 
       function checkScroll(e) {
         // console.log(checkerBoard[0].scrollHeight);
-        const slideInAt = (window.scrollY + window.innerHeight - (checkerBoardHeight / 2));
+        const slideInAt = (window.scrollY + window.innerHeight - (checkerBoardHeight / 4));
 
         const isHalfShown = slideInAt > checkerBoardTop;
         const isNotScrolledPast = window.scrollY < imageBottom;

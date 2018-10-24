@@ -303,4 +303,26 @@ p {
 /* Modal */
 .modal-display {
   display: grid;
+  grid-template-rows: auto auto auto;
+  margin-top: 50%;
+  color: white;
+}
+
+.modal-display h2 {
+  margin: 0 auto;
+  color: #F7931D;
+}
+
+.modal-display button {
+  margin: 0 auto;
+}
+
+.modal-form {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.email-and-number {
+  display: grid;
+  grid-template-columns: auto auto;
 }
