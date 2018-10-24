@@ -304,17 +304,19 @@ p {
 .modal-display {
   display: grid;
   grid-template-rows: auto auto auto;
-  margin-top: 50%;
+  margin-top: 35%;
   color: white;
 }
 
 .modal-display h2 {
   margin: 0 auto;
   color: #F7931D;
+  margin-bottom: 30px;
 }
 
 .modal-display button {
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .modal-form {
@@ -324,5 +326,24 @@ p {
 
 .email-and-number {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 3fr 0.25fr 3fr;
+}
+
+.email-and-number input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message {
+  margin-top: 20px;
+}
+
+.message input{
+  height: 150px;
+}
+
+input {
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
 }
